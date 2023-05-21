@@ -1,0 +1,52 @@
+.card{
+    border: 1px dotted gray;
+    padding: 10px;
+
+    & p{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.error{
+    color: red;
+}
+
+.btn{
+    border: none;
+    padding: 5px 8px;
+    color: white;
+    background-color: #5a5a5a;
+    margin-right: 5px;
+    margin-top: 10px;
+
+    &:hover{
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    &.btn-danger{
+        background-color: red;
+    }
+
+    &:disabled{
+        background-color: black;
+    }
+}
+
+.form-control{
+    padding-right: 10px;
+
+    & input{
+        width: 100%;
+    }
+}
+
+span, p{
+    font-size: 1.2rem;
+
+    &.completed{
+        text-decoration: line-through;
+    }
+}
